@@ -6,6 +6,6 @@ module.exports = function(server){
   server.use('/api', router);
 
   //Registrando os métodos da api
-  const produtoService = require('../produtos/produtoService');
+  const produtoService = require('../api/produtos/produtoService');
   produtoService.register(router,'/produto');
 };
